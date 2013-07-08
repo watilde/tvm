@@ -1,0 +1,25 @@
+{
+  "name": "tvm",
+  "version": "0.0.1",
+  "description": "TypeScript Version Manager",
+  "main": "node bin/tvm",
+  "dependencies": {
+    "async": "~0.2.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/watilde/tvm"
+  },
+  "keywords": [
+    "TypeScript"
+  ],
+  "author": "Daijiro Wachi",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/watilde/tvm/issues"
+  }
+}

@@ -1,0 +1,126 @@
+#!/usr/bin/env node
+/**
+ * tsvm
+ * TypeScript version manager
+ *
+ * @author  Daijiro Wachi <daijiro.wachi@gmail.com>
+ * @url     https://github.com/watilde/tsvm
+ * @version 0.0.1
+ */
+
+var http = require('http'),
+  fs = require('fs'),
+  async = require('async'),
+  exec = require('child_process').exec,
+  argv = process.argv,
+  registry = 'http://registry.npmjs.org/typescript/';
+
+function list_known() {
+  async.waterfall([
+    function (callback) {
+      console.log('Searching...');
+      callback(null);
+    }, function (callback) {
+      http.get(registry, function(res) {
+        var data = '';
+        res.setEncoding('utf8')
+        res.on('data', function(str) {
+          data += str;
+        }).on('end', function() {
+          data = JSON.parse(data);
+          callback(null, Object.keys(data.versions));
+        });
+      });
+    }, function (versions) {
+      console.log('');
+      versions.forEach(function (version) {
+        console.log('v' + version);
+      });
+    }
+  ]);
+}
+
+function install(version) {
+  async.waterfall([
+    function (callback) {
+      console.log('Searching...');
+      callback(null);
+    }, function (callback) {
+      http.get(registry, function(res) {
+        var data = '';
+        res.setEncoding('utf8')
+        res.on('data', function(str) {
+          data += str;
+        }).on('end', function() {
+          data = JSON.parse(data);
+          callback(null, Object.keys(data.versions), data);
+        });
+      });
+    }, function (versions, data, callback) {
+      var tarball = '';
+      if (versions.indexOf(version) !== -1) {
+        tarball = data.versions[version].dist.tarball;
+        callback(null, tarball);
+      } else {
+        console.log("Unknown typescript compiler version: '" + version + "'.");
+      }
+    }, function (tarball, callback) {
+      http.get(tarball, function(res) {
+        var data = '';
+        res.setEncoding('binary')
+        res.on('data', function(str) {
+          data += str;
+        }).on('end', function() {
+          callback(null, data);
+        });
+      });
+    }, function (data, callback) {
+      exec('mkdir ../src/v' + version,
+      function (err) {
+        if (err) {
+          console.log(err);
+        } else {
+          callback(null, data);
+        }
+      });
+    }, function (data, callback) {
+      var file_name = '../src/v' + version + '/typescript-' + version;
+      console.log('');
+      fs.writeFile(file_name + '.tgz',
+        data,
+        'binary',
+        function(err) {
+          if (err) {
+            console.log(err);
+          } else {
+            callback(null);
+          }
+        }
+      );
+    }, function (callback) {
+      var file_name = '../src/v' + version + '/typescript-' + version,
+        command = 'tar -zxf ' + file_name + '.tgz -C ../src/v' + version;
+      command += ' && mv ../src/v' + version + '/package ' + file_name;
+      command += ' && cp -r ' + file_name + ' ../typescript/v' + version;
+      exec(command, function (err) {
+        if (err) {
+          console.log(err);
+        } else {
+         console.log('install done');
+        }
+      });
+    }, function (callback) {
+    }
+  ]);
+}
+
+if (argv[2] === 'list') {
+  if (argv[3] === 'known') {list_known(); }
+} else if (argv[2] === 'install') {
+  if (argv[3] != null) install(argv[3]);
+} else {
+  var message = "Unrecognized command line argument: '";
+  message += argv[2];
+  message += "' ( see: 'tsvm usage' )";
+  console.log(message);
+}

@@ -12,11 +12,11 @@ Using npm.
 
 Confirm.
 
-    $ tvm help
+    $ tvm usage
 
 ## Usage
 
-    tvm help                   Show this message
+    tvm usage                  Show this message
     tvm list                   List installed versions
     tvm list known             List registry versions
     tvm install <version>      Install a version
@@ -29,16 +29,16 @@ Confirm.
 
 Install.
 
-    $ tvm install 0.9.0
+    $ tvm install 0.9.5
     Searching...
 
     Done
 
 Switch use version.
 
-    $ tvm use 0.9.0
+    $ tvm use 0.9.5
     $ tvm tsc -v
-    Version 0.9.0
+    Version 0.9.5
 
 Use tsc.
 
@@ -47,7 +47,7 @@ Use tsc.
 View all installed version list.
 
     $ tvm list
-    v0.9.0
+    v0.9.5
 
 
 View Remote version.
@@ -62,13 +62,18 @@ View Remote version.
     v0.8.3
     v0.9.0
     v0.9.0-1
+    v0.9.5
 
 Uninstall.
 
-    $ tvm uninstall 0.9.0
+    $ tvm uninstall 0.9.5
 
     Done
 
 Update tvm.
 
     $ npm update -g tvm
+
+Uninstall tvm.
+
+    $ npm uninstall -g tvm

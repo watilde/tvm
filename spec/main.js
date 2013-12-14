@@ -1,16 +1,8 @@
 (function () {
   'use strict';
-  var define     = require('./define');
-  var assert     = require('assert');
-  var tvm        = function () {};
-  tvm.usage      = require('../lib/usage');
-  tvm.list       = require('../lib/list');
-  tvm.list_known = require('../lib/list_known');
-  tvm.install    = require('../lib/install');
-  tvm.uninstall  = require('../lib/uninstall');
-  tvm.use        = require('../lib/use');
-  tvm.tsc        = require('../lib/tsc');
-  tvm.clean      = require('../lib/clean');
+  var define = require('./define');
+  var assert = require('assert');
+  var tvm    = require('../tvm');
 
   describe('tvm', function() {
     it('usage', function() {

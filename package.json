@@ -1,6 +1,6 @@
 {
   "name": "tvm",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "TypeScript Version Manager",
   "main": "node bin/tvm",
   "dependencies": {

@@ -1,16 +1,16 @@
 {
   "name": "tvm",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "TypeScript Version Manager",
   "main": "node bin/tvm",
   "dependencies": {
     "async": "~0.2.9"
   },
   "devDependencies": {
-    "buster": "~0.6.12"
+    "mocha": "~1.15.1"
   },
   "scripts": {
-    "test": "buster test"
+    "test": "./node_modules/.bin/mocha ./spec/main.js"
   },
   "bin": {
     "tvm": "./bin/tvm"

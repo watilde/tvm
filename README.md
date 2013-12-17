@@ -20,6 +20,7 @@ Confirm.
     tvm list                   List installed versions
     tvm list known             List registry versions
     tvm install <version>      Install a version
+    tvm install latest         Install a latest version
     tvm use <version>          Use <version>
     tvm tsc <file>             Compile <file>
     tvm uninstall <version>    Uninstall a version
@@ -62,6 +63,8 @@ View Remote version.
     v0.8.3
     v0.9.0
     v0.9.0-1
+    v0.9.1
+    v0.9.1-1
     v0.9.5
 
 Uninstall.

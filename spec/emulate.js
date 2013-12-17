@@ -17,7 +17,7 @@
       tvm.list_known(done);
     });
 
-    it('install latest', function(done) {
+    it('install 0.9.5', function(done) {
       tvm.install('0.9.5', done);
     });
 
@@ -25,7 +25,7 @@
       tvm.list(done);
     });
 
-    it('use latest', function(done) {
+    it('use 0.9.5', function(done) {
       tvm.use('0.9.5', done);
     });
 
@@ -33,11 +33,11 @@
       tvm.list(done);
     });
 
-    it('uninstall latest before', function(done) {
+    it('uninstall 0.9.5', function(done) {
       tvm.uninstall('0.9.5', done);
     });
 
-    it('show list check uninstall latest', function(done) {
+    it('show list check uninstall 0.9.5', function(done) {
       tvm.list(done);
     });
 

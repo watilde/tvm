@@ -1,16 +1,19 @@
 {
   "name": "tvm",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "TypeScript Version Manager",
-  "main": "node bin/tvm",
+  "main": "./lib/tvm",
+  "bin": {
+    "tvm": "./bin/tvm"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha ./spec/emulate.js"
+  },
   "dependencies": {
     "async": "~0.2.9"
   },
   "devDependencies": {
     "mocha": "~1.15.1"
-  },
-  "scripts": {
-    "test": "./node_modules/.bin/mocha ./spec/emulate.js"
   },
   "bin": {
     "tvm": "./bin/tvm"

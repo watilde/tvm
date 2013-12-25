@@ -15,9 +15,6 @@
   "devDependencies": {
     "mocha": "~1.15.1"
   },
-  "bin": {
-    "tvm": "./bin/tvm"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/watilde/tvm.git"

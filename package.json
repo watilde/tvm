@@ -23,7 +23,11 @@
     "TypeScript"
   ],
   "homepage": "https://github.com/watilde/tvm",
-  "author": "Daijiro Wachi",
+  "author": {
+    "name": "Daijiro Wachi",
+    "email": "daijiro.wachi@gmail.com",
+    "url": "https://github.com/watilde/"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/watilde/tvm/issues"

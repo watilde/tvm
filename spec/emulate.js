@@ -6,6 +6,7 @@
   describe('tvm', function() {
     this.timeout(5000);
     before(function(done) {
+      console.log('Emulating the behavior of using tvm.\n\n');
       tvm.clean(done);
     });
 

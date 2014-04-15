@@ -84,7 +84,7 @@ Uninstall tvm.
 ## Add tsc PATH
 Add the following line to the end of your .bashrc or .zshrc.
 
-    export PATH=$(which tvm | sed -e "s/bin/lib\/node_modules/")/current/bin:$PATH
+    alias tsc='tvm tsc'
 
 Reload config.
 

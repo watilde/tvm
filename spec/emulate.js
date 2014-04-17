@@ -6,7 +6,7 @@
   describe('tvm', function() {
     this.timeout(5000);
     before(function(done) {
-      console.log('TEST BEHAVIOR\n\n');
+      console.log('EMULATE TEST\n\n');
       tvm.clean(done);
     });
 

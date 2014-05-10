@@ -10,11 +10,11 @@
     "test": "./node_modules/.bin/mocha --require enable_power_assert.js ./spec/*.js"
   },
   "dependencies": {
-    "async": "~0.2.9"
+    "async": "^0.8.0"
   },
   "devDependencies": {
-    "mocha": "~1.15.1",
-    "chai": "~1.8.1",
+    "mocha": "^1.18.2",
+    "chai": "^1.9.1",
     "power-assert": "^0.6.1",
     "espower-loader": "^0.6.0"
   },

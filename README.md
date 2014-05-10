@@ -1,6 +1,6 @@
 # TVM
 
-[![Build Status](https://travis-ci.org/watilde/tvm.png?branch=master)](https://travis-ci.org/watilde/tvm)
+[![Build Status](https://travis-ci.org/watilde/tvm.png?branch=master)](https://travis-ci.org/watilde/tvm) [![Dependency Status](https://gemnasium.com/watilde/tvm.svg)](https://gemnasium.com/watilde/tvm)
 
 TypeScript Version Manager.
 

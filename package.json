@@ -1,6 +1,6 @@
 {
   "name": "tvm",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "TypeScript Version Manager",
   "main": "./lib/tvm",
   "bin": {
@@ -15,8 +15,8 @@
   "devDependencies": {
     "mocha": "^1.18.2",
     "chai": "^1.9.1",
-    "power-assert": "^0.6.1",
-    "espower-loader": "^0.6.0"
+    "power-assert": "^0.7.1",
+    "espower-loader": "^0.7.0"
   },
   "repository": {
     "type": "git",

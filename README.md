@@ -6,6 +6,7 @@ TypeScript Version Manager.
 + [![NPM Version](http://img.shields.io/npm/v/tvm.svg)](https://www.npmjs.org/package/tvm)
 + [![Build Status](https://travis-ci.org/watilde/tvm.png?branch=master)](https://travis-ci.org/watilde/tvm)
 + [![Dependency Status](https://gemnasium.com/watilde/tvm.svg)](https://gemnasium.com/watilde/tvm)
++ [![MIT LICENSE](http://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/watilde/tvm/blob/master/LICENSE)
 
 ## Install
 

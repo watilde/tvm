@@ -1,6 +1,6 @@
 {
   "name": "tvm",
-  "version": "0.1.11",
+  "version": "0.2.0",
   "description": "TypeScript Version Manager",
   "main": "./lib/tvm",
   "bin": {
@@ -15,7 +15,7 @@
   "devDependencies": {
     "mocha": "^1.18.2",
     "chai": "^1.9.1",
-    "power-assert": "^0.7.1",
+    "power-assert": "^0.8.0",
     "espower-loader": "^0.8.0"
   },
   "repository": {

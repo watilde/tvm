@@ -17,7 +17,7 @@
     "mocha": "^1.18.2",
     "chai": "^1.9.1",
     "power-assert": "^0.8.0",
-    "espower-loader": "^0.8.0"
+    "espower-loader": "^0.9.0"
   },
   "repository": {
     "type": "git",

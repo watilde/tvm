@@ -1,6 +1,6 @@
 {
   "name": "tvm",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "TypeScript Version Manager",
   "main": "./lib/tvm",
   "bin": {
@@ -10,13 +10,14 @@
     "test": "./node_modules/.bin/mocha --require power_assert.js ./spec/*.js"
   },
   "dependencies": {
-    "async": "^0.9.0"
+    "async": "^0.9.0",
+    "update-notifier": "^0.2.0"
   },
   "devDependencies": {
     "mocha": "^1.18.2",
     "chai": "^1.9.1",
     "power-assert": "^0.8.0",
-    "espower-loader": "^0.8.0"
+    "espower-loader": "^0.9.0"
   },
   "repository": {
     "type": "git",

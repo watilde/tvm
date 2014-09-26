@@ -28,7 +28,7 @@ Confirm.
     tvm use <version>          Use <version>
     tvm tsc <file>             Compile <file>
     tvm uninstall <version>    Uninstall a version
-    tvm clean                  Remove source file
+    tvm clean                  Remove all source files
 
 ## Example
 

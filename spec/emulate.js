@@ -4,7 +4,7 @@
   var tvm    = require('../lib/tvm');
 
   describe('tvm', function() {
-    this.timeout(5000);
+    this.timeout(15000);
     before(function(done) {
       console.log('EMULATE TEST\n\n');
       tvm.clean(done);

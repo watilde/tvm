@@ -97,3 +97,7 @@ Reload config.
 Confirm.
 
     $ tsc -v
+
+## Task runner plugins
+ + Grunt plugin: [grunt-tvm-tsc](https://github.com/watilde/grunt-tvm-tsc)
+ + gulp plugin: [gulp-tvm-tsc](https://github.com/watilde/gulp-tvm-tsc)

@@ -1,6 +1,6 @@
 {
   "name": "tvm",
-  "version": "0.8.8",
+  "version": "0.8.9",
   "description": "TypeScript Version Manager",
   "main": "./lib/tvm",
   "bin": {

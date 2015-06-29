@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "mocha": "^2.2.5",
-    "chai": "^2.3.0",
+    "chai": "^3.0.0",
     "power-assert": "^0.11.0",
     "espower-loader": "^0.11.0"
   },

@@ -7,6 +7,6 @@
 $ npm test
 ```
 
-* All pull requests should be made to the `develop` branch.
+* All pull requests should be made to the `master` branch.
 
 * Don't do version dump.
